@@ -3,10 +3,15 @@
 // 1. Require Composer's autoloader
 require __DIR__ . '/vendor/autoload.php';
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$apiKey = $_ENV['RESEND_API_KEY'] ?? '';
+
 try {
     // 2. Initialize the Resend client with your API key
     // Replace 're_123456789' with your actual Resend API key
-    $resend = Resend::client('');
+    $resend = Resend::client($apiKey);
 
     // 3. Send the email
     $result = $resend->emails->send([
