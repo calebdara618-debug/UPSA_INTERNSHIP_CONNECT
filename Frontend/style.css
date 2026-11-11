@@ -1,0 +1,880 @@
+/* =================================
+   GENERAL STYLING
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #252535;
+    line-height: 1.6;
+}
+
+:root {
+    --navy: #17182F;
+    --gold: #D49A0B;
+    --white: #ffffff;
+    --light: #F5F6FA;
+}
+
+/* HEADINGS */
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* =================================
+   NAVIGATION BAR
+================================= */
+
+header {
+    background: var(--white);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 6%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    font-size: 17px;
+    color: var(--navy);
+    /*line-height: 1.3;*/
+    white-space: nowrap;
+}
+
+.logo span {
+    display: block;
+    font-size: 10px;
+    color: var(--gold);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: var(--navy);
+    padding: 10px 20px;
+    border: 1px solid var(--navy);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.signup-btn {
+    text-decoration: none;
+    background: var(--gold);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    opacity: 0.8;
+}
+
+/* MOBILE MENU BUTTON */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--navy);
+    cursor: pointer;
+}
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+
+
+
+.hero {
+    min-height: 520px;
+
+    /* HERO BACKGROUND IMAGE */
+    background:
+        linear-gradient(
+            rgba(12, 29, 53, 0.75),
+            rgba(12, 29, 53, 0.75)
+        ),
+        url("Assets/upsa\ ttttt.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-tag {
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 15px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero h1 {
+    font-size: 46px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    color: #E0E0EA;
+}
+
+
+
+/* BUTTONS */
+
+.primary-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: white;
+
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.secondary-btn {
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+
+    margin-left: 10px;
+}
+
+
+/* =================================
+   ABOUT SECTION
+================================= */
+
+.about {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 30px;
+    color: var(--navy);
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* =================================
+   STATISTICS SECTION
+================================= */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    padding: 40px 8%;
+    background: var(--light);
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box h2 {
+    color: var(--gold);
+    font-size: 32px;
+}
+
+.stat-box p {
+    color: var(--navy);
+    font-size: 14px;
+}
+
+
+/* =================================
+   INTERNSHIP OPPORTUNITIES
+================================= */
+
+.opportunities {
+    padding: 80px 8%;
+    background: #ffffff;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 280px;
+
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #eee;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: var(--navy);
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.card a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    background: var(--navy);
+    color: white;
+
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+/* =================================
+   ORGANIZATIONS SECTION
+================================= */
+
+.organizations {
+    background: var(--light);
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.organizations p {
+    color: #666;
+    margin-top: 15px;
+}
+
+
+/* =================================
+   CONTACT SECTION
+================================= */
+
+.contact {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px 0;
+    color: #666;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background: var(--navy);
+    color: white;
+
+    padding: 40px 8%;
+    text-align: center;
+}
+
+footer h3 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+/* =================================
+   TABLET RESPONSIVENESS
+================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+}
+
+
+/* =================================
+   MOBILE RESPONSIVENESS
+================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .logo h2 {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+
+        width: 100%;
+        text-align: center;
+        gap: 18px;
+
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 70px 6%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .secondary-btn {
+        margin: 12px 0 0;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+}
+
+
+* Partners Section */
+
+.partners-section {
+    width: 100%;
+    padding: 50px 0;
+    background: #0B1F3A;
+    text-align: center;
+    overflow: hidden;
+}
+
+.partners-section h2 {
+    font-size: 32px;
+    color:  #F4B400;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.partners-section {
+    width: 100%;
+    text-align: center;
+}
+
+.partners-section .partners-title {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+//car{
+    display: inline-block;
+    background: #D4A017;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+.partners-section p {
+    color: #F4B400;
+    margin-bottom: 35px;
+}
+
+/* Logo Slider */
+
+.logo2-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Moving Track */
+
+.logo2-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: scrollLogos 25s linear infinite;
+}
+
+/* Individual Logos */
+
+.logo2 {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    flex-shrink: 0;
+}
+
+.logo2 img {
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: contain;
+    filter: none;
+}
+
+/* Animation */
+
+@keyframes scrollLogos {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+}
+
+/* Pause when mouse hovers */
+
+.logo2-slider:hover .logo2-track {
+    animation-play-state: paused;
+}
+
+
+
+/* HERO SECTION */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #10243a;
+}
+
+/* BACKGROUND IMAGE */
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("Assets/UPSA-tower.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation: movingBackground 18s ease-in-out infinite alternate;
+
+    z-index: 0;
+}
+
+/* MOVING ANIMATION */
+
+@keyframes movingBackground {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12) translateX(-1%);
+    }
+
+    100% {
+        transform: scale(1.05) translateX(1%);
+    }
+
+}
+
+/* DARK OVERLAY */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(5, 23, 48, 0.95),
+        rgba(5, 23, 48, 0.75),
+        rgba(5, 23, 48, 0.15)
+    );
+
+    z-index: 1;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 750px;
+    padding: 80px 8%;
+
+    color: white;
+}
+
+/* HERO TAG */
+
+.hero-tag {
+    display: inline-block;
+
+    background: #c9a227;
+    color: #10243a;
+
+    padding: 10px 20px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+/* HEADING */
+
+.hero-content h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+    color: #d6aa32;
+}
+
+/* DESCRIPTION */
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #eeeeee;
+
+    margin-bottom: 35px;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    padding: 15px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* PRIMARY BUTTON */
+
+.primary-btn {
+    background: #c9a227;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #a98216;
+    transform: translateY(-4px);
+}
+
+/* SECONDARY BUTTON */
+
+.secondary-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #10243a;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: 600px;
+    }
+
+    .hero-background {
+        background-position: 65% center;
+    }
+
+    .hero-overlay {
+        background: rgba(5, 23, 48, 0.78);
+    }
+
+    .hero-content {
+        padding: 60px 7%;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-btn {
+        text-align: center;
+    }
+
+}
+
+
+/* PRELOADER */
+#preloader {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    transition: opacity 8.0s ease, visibility 8.0s ease;
+}
+
+/* Hide Preloader */
+#preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Loader Content */
+.loader-content {
+    text-align: center;
+    color: white;
+}
+
+/* Logo */
+.loader-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    animation: logoPulse 5s infinite ease-in-out;
+}
+
+/* Spinner */
+.loader-spinner {
+    width: 55px;
+    height: 55px;
+    border: 4px solid rgba(212, 175, 55, 0.2);
+    border-top: 4px solid #D4AF37;
+    border-radius: 50%;
+    margin: 10px auto 25px;
+    animation: spin 1s linear infinite;
+}
+
+/* Welcome Text */
+.loader-content h2 {
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: #D4AF37;
+    margin-bottom: 10px;
+}
+
+.loader-content p {
+    font-size: 13px;
+    color: #000033;
+    letter-spacing: 1px;
+}
+
+/* Loading Text */
+.loading-text {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #D4AF37;
+}
+
+.loading-text span {
+    color: white;
+}
+
+/* Animations */
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes logoPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 0.7;
+    }
+}

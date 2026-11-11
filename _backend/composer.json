@@ -1,0 +1,12 @@
+{
+    "name": "dell/backend",
+    "authors": [
+        {
+            "name": "caleb Dara",
+            "email": "calebdara618@gmail.com"
+        }
+    ],
+    "require": {
+        "resend/resend-php": "^1.18"
+    }
+}

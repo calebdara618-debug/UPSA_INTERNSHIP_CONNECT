@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <title>Sign Up | UPSA Internship Connect</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+
+  <body>
+    <div class="signup-container">
+      <!-- LEFT SECTION -->
+      <div class="signup-left">
+        <div class="overlay"></div>
+        <div class="left-content">
+          <h1>Start Your Journey With Us</h1>
+          <p>
+            Create your account and connect with internship opportunities,
+            organizations and professional experiences across Ghana.
+          </p>
+          <div class="benefits">
+            <h3>Why Join UPSA Internship Connect?</h3>
+            <p>✓ Discover internship opportunities</p>
+            <p>✓ Connect with industry professionals</p>
+            <p>✓ Build your professional experience</p>
+            <p>✓ Track your internship applications</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SECTION -->
+      <div class="signup-right">
+        <div class="signup-form">
+          <div class="logo-section">
+            <img src="Assets/GH.jpeg" alt="UPSA Logo" />
+            <div>
+              <h2>UPSA Internship Connect</h2>
+              <small>Scholarship with Professionalism</small>
+            </div>
+          </div>
+
+          <h1>Create Your Account</h1>
+          <p class="subtitle">
+            Join our platform and discover new opportunities.
+          </p>
+
+          <form
+            action="../Backend/config/signup.php"
+            method="POST"
+            id="signupForm"
+          >
+            <!-- REGISTER AS (Matches $_POST['userType']) -->
+            <label for="userType">Register As</label>
+            <select id="userType" required name="userType">
+              <option value="">Select Account Type</option>
+              <option value="student">Student</option>
+              <option value="organization">Organization</option>
+            </select>
+
+            <!-- FULL NAME (Matches $_POST['fullname']) -->
+            <label for="fullname">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter your full name"
+              required
+            />
+
+            <!-- EMAIL (Matches $_POST['email']) -->
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+
+            <!-- PHONE (Matches $_POST['phone']) -->
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="e.g. 0240000000"
+              required
+            />
+
+            <!-- ORGANIZATION DETAILS -->
+            <div id="organizationFields" class="extra-fields">
+              <label for="organizationName"> Organization Name </label>
+              <input
+                type="text"
+                id="organizationName"
+                placeholder="Enter organization name"
+              />
+
+              <label for="organizationType"> Organization Type </label>
+              <select id="organizationType">
+                <option value="">Select Organization Type</option>
+                <option>Private Company</option>
+                <option>Government Institution</option>
+                <option>NGO</option>
+                <option>Educational Institution</option>
+                <option>Other</option>
+              </select>
+
+              <label for="website">Organization Website</label>
+              <input
+                type="url"
+                id="website"
+                placeholder="https://example.com"
+              />
+            </div>
+
+            <!-- PASSWORD (Matches $_POST['password']) -->
+            <label for="password">Create Password</label>
+            <div class="password-box">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create a password"
+                required
+                minlength="8"
+              />
+              <button type="button" onclick="togglePassword('password')">
+                Show
+              </button>
+            </div>
+
+            <!-- CONFIRM PASSWORD (Matches $_POST['confirmPassword']) -->
+            <label for="confirmPassword">Confirm Password</label>
+            <div class="password-box">
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+                placeholder="Confirm your password"
+                required
+              />
+              <button type="button" onclick="togglePassword('confirmPassword')">
+                Show
+              </button>
+            </div>
+
+            <!-- TERMS (Matches $_POST['terms']) -->
+            <div class="terms">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms">
+                I agree to the Terms and Conditions and Privacy Policy.
+              </label>
+            </div>
+
+            <button type="submit" class="signup-button">Create Account</button>
+            <p id="message"></p>
+          </form>
+
+          <div class="login-link">
+            Already have an account?
+            <a href="login.html">Login</a>
+          </div>
+
+          <div class="back-home">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="signup.js"></script>
+  </body>
+</html>

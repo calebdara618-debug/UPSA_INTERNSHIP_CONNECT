@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Internship Opportunities | UPSA Internship Connect</title>
+
+    <link rel="stylesheet" href="Internship.css">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="Assets/GH.jpeg" alt="UPSA Logo">
+
+            <div>
+                <h2 semi-bold>UPSA Internship Connect</h2>
+                <small>Scholarship with Professionalism</small>
+            </div>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="aboutus.html">About Us</a>
+
+            <a href="internships.html" class="active">
+                Internships
+            </a>
+
+            <a href="contactus.html">Contact Us</a>
+
+            <a href="login.html" class="login-btn">Login</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="internship-hero">
+
+        <div class="hero-content">
+
+            <span>BUILD YOUR PROFESSIONAL FUTURE</span>
+
+            <h1>
+                Discover Internship Opportunities Across Ghana
+            </h1>
+
+            <p>
+                Explore internship opportunities from different
+                industries, connect with organizations and gain
+                the professional experience needed to succeed.
+            </p>
+
+            <a href="#opportunities" class="hero-btn">
+                Explore Opportunities
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="intro">
+
+        <h2>Find the Right Internship for You</h2>
+
+        <p>
+            Whether you are interested in technology, finance,
+            marketing, administration or business management,
+            there is an opportunity waiting for you.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH AND FILTER -->
+
+    <section class="search-section" id="opportunities">
+
+        <h2>Available Internship Opportunities</h2>
+
+        <p>Search and discover opportunities that match your interests.</p>
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search internship, organization or location..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="">All Categories</option>
+
+                <option value="Technology">Technology</option>
+
+                <option value="Finance">Finance</option>
+
+                <option value="Marketing">Marketing</option>
+
+                <option value="Business">Business</option>
+
+                <option value="Design">Design</option>
+
+                <option value="Logistics">Logistics</option>
+
+            </select>
+
+
+            <select id="locationFilter">
+
+                <option value="">All Locations</option>
+
+                <option value="Accra">Accra</option>
+
+                <option value="Tema">Tema</option>
+
+                <option value="Kumasi">Kumasi</option>
+
+                <option value="Takoradi">Takoradi</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- INTERNSHIP COUNT -->
+
+        <div class="results-info">
+
+            <p>
+                Showing <span id="resultCount">10</span>
+                internship opportunities
+            </p>
+
+        </div>
+
+
+        <!-- INTERNSHIP CARDS -->
+
+        <div class="internship-grid" id="internshipGrid">
+
+
+            <!-- 1. WEB DEVELOPMENT -->
+
+            <div class="internship-card"
+                 data-category="Technology"
+                 data-location="Accra">
+
+                <div class="card-top">
+
+                    <span class="category">Technology</span>
+
+                    <span class="status">Dara Tech</span>
+
+                </div>
+
+                <h3>Web Development Intern</h3>
+
+                <h4>Technology & Software Company</h4>
+
+                <p>
+                    Assist in developing websites, maintaining
+                    web applications and creating responsive
+                    user interfaces.
+                </p>
+
+                <div class="details">
+
+                    <span>📍 Accra, Ghana</span>
+
+                    <span>⏳ 3 Months</span>
+
+                    <span>💻 Hybrid</span>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+                <a href="login.html" class="apply-btn">
+                    Apply Now →
+                </a>
+
+            </div>
+
+
+            <!-- 2. NETWORKING -->
+
+            <div class="internship-card"
+                 data-category="Technology"
+                 data-location="Tema">
+
+                <div class="card-top">
+
+                    <span class="category">Technology</span>
+
+                    <span class="status">Sample Listing</span>
+
+                </div>
+
+                <h3>Network Support Intern</h3>
+
+                <h4>ICT Infrastructure Company</h4>
+
+                <p>
+                    Assist with network installation,
+                    troubleshooting, system maintenance
+                    and IT infrastructure management.
+                </p>
+
+                <div class="details">
+
+                    <span>📍 Tema, Ghana</span>
+
+                    <span>⏳ 3 Months</span>
+
+                    <span>🏢 On-site</span>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>Networking</span>
+                    <span>CCNA Basics</span>
+                    <span>Hardware</span>
+
+                </div>
+
+                <a href="login.html" class="apply-btn">
+                    Apply Now →
+                </a>
+
+            </div>
+
+
+            <!-- 3. CYBERSECURITY -->
+
+            <div class="internship-card"
+                 data-category="Technology"
+                 data-location="Accra">
+
+                <div class="card-top">
+
+                    <span class="category">Technology</span>
+
+                    <span class="status">Sample Listing</span>
+
+                </div>
+
+                <h3>Cybersecurity Intern</h3>
+
+                <h4>Information Security Firm</h4>
+
+                <p>
+                    Support security monitoring, vulnerability
+                    assessments, risk analysis and information
+                    security awareness activities.
+                </p>
+
+                <div class="details">
+
+                    <span>📍 Accra, Ghana</span>
+
+                    <span>⏳ 3 Months</span>
+
+                    <span>🏢 On-site</span>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>Cybersecurity</span>
+                    <span>Linux</span>
+                    <span>Security</span>
+
+                </div>
+
+                <a href="login.html" class="apply-btn">
+                    Apply Now →
+                </a>
+
+            </div>
+
+
+            <!-- 4. DATA ANALYSIS -->
+
+            <div class="internship-card"
+                 data-category="Technology"
+                 data-location="Kumasi">
+
+                <div class="card-top">
+
+                    <span class="category">Technology</span>
+
+                    <span class="status">Sample Listing</span>
+
+                </div>
+
+                <h3>Data Analyst Intern</h3>
+
+                <h4>Business Intelligence Company</h4>
+
+                <p>
+                    Assist in collecting, cleaning and analysing
+                    business data to support organizational
+                    decision-making.
+                </p>
+
+                <div class="details">
+
+                    <span>📍 Kumasi, Ghana</span>
+
+                    <span>⏳ 4 Months</span>
+
+                    <span>💻 Hybrid</span>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>Excel</span>
+                    <span>SQL</span>
+                    <span>Power BI</span>
+
+                </div>
+
+                <a href="login.html" class="apply-btn">
+                    Apply Now →
+                </a>
+
+            </div>
+
+
+            <!-- 5. DIGITAL MARKETING -->
+
+            <div class="internship-card"
+                 data-category="Marketing"
+                 data-location="Accra">
+
+                <div class="card-top">
+
+                    <span class="category">Marketing</span>
+
+                    <span class="status">Sample Listing</span>
+
+                </div>
+
+                <h3>Digital Marketing Intern</h3>
+
+                <h4>Digital Media Agency</h4>
+
+                <p>
+                    Help develop marketing campaigns, manage
+                    social media platforms and analyse digital
+                    marketing performance.
+                </p>
+
+                <div class="details">
+
+                    <span>📍 Accra, Ghana</span>
+
+                    <span>⏳ 3 Months</span>
+
+                    <span>💻 Hybrid</span>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>Social Media</span>
+                    <span>SEO</span>
+                    <span>Content Creation</span>
+
+                </div>
+
+                <a href="login.html" class="apply-btn">
+                    Apply Now →
+                </a>
+
+            </div>
+
+
+            <!-- 6. ACCOUNTING -->
+
+            <div class="internship-card"
+                 data-category="Finance"
+                 data-location="Accra">
+
+                <div class="card-top">
+
+                    <span class="category">Finance</span>
+
+                    <span class="status">Sample Listing</span>
+
+                </div>
+
+                <h3>Accounting Intern</h3>
+
+                <h4>Financial Services Firm</h4>
+
+                <p>
+                    Assist with financial statements, bookkeeping,
+                    account reconciliation and financial reporting.
+                </p>
+
+                <div class="details">
+
+                    <span>📍 Accra, Ghana</span>
+
+                    <span>⏳ 6 Months</span>
+
+                    <span>🏢 On-site</span>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>Accounting</span>
+                    <span>Excel</span>
+                    <span>Finance</span>
+
+                </div>
+
+                <a href="login.html" class="apply-btn">
+                    Apply Now →
+                </a>
+
+            </div>
+
+
+            <!-- 7. HUMAN RESOURCE -->
+
+            <div class="internship-card"
+                 data-category="Business"
+                 data-location="Tema">
+
+                <div class="card-top">
+
+                    <span class="category">Business</span>
+
+                    <span class="status">Sample Listing</span>
+
+                </div>
+
+                <h3>Human Resource Intern</h3>
+
+                <h4>Corporate Management Company</h4>
+
+                <p>
+                    Support recruitment, employee records,
+                    staff training and human resource
+                    administration.
+                </p>
+
+                <div class="details">
+
+                    <span>📍 Tema, Ghana</span>
+
+                    <span>⏳ 3 Months</span>
+
+                    <span>🏢 On-site</span>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>Communication</span>
+                    <span>HR</span>
+                    <span>Microsoft Office</span>
+
+                </div>
+
+                <a href="login.html" class="apply-btn">
+                    Apply Now →
+                </a>
+
+            </div>
+
+
+            <!-- 8. GRAPHIC DESIGN -->
+
+            <div class="internship-card"
+                 data-category="Design"
+                 data-location="Kumasi">
+
+                <div class="card-top">
+
+                    <span class="category">Design</span>
+
+                    <span class="status">Sample Listing</span>
+
+                </div>
+
+                <h3>Graphic Design Intern</h3>
+
+                <h4>Creative Design Studio</h4>
+
+                <p>
+                    Create promotional designs, marketing
+                    materials, digital graphics and visual
+                    content for clients.
+                </p>
+
+                <div class="details">
+
+                    <span>📍 Kumasi, Ghana</span>
+
+                    <span>⏳ 3 Months</span>
+
+                    <span>💻 Hybrid</span>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>Photoshop</span>
+                    <span>Canva</span>
+                    <span>Illustrator</span>
+
+                </div>
+
+                <a href="login.html" class="apply-btn">
+                    Apply Now →
+                </a>
+
+            </div>
+
+
+            <!-- 9. LOGISTICS -->
+
+            <div class="internship-card"
+                 data-category="Logistics"
+                 data-location="Takoradi">
+
+                <div class="card-top">
+
+                    <span class="category">Logistics</span>
+
+                    <span class="status">Sample Listing</span>
+
+                </div>
+
+                <h3>Logistics Intern</h3>
+
+                <h4>Supply Chain Management Company</h4>
+
+                <p>
+                    Assist in inventory management, transportation
+                    coordination, procurement and supply chain
+                    documentation.
+                </p>
+
+                <div class="details">
+
+                    <span>📍 Takoradi, Ghana</span>
+
+                    <span>⏳ 4 Months</span>
+
+                    <span>🏢 On-site</span>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>Logistics</span>
+                    <span>Inventory</span>
+                    <span>Excel</span>
+
+                </div>
+
+                <a href="login.html" class="apply-btn">
+                    Apply Now →
+                </a>
+
+            </div>
+
+
+            <!-- 10. CUSTOMER SERVICE -->
+
+            <div class="internship-card"
+                 data-category="Business"
+                 data-location="Accra">
+
+                <div class="card-top">
+
+                    <span class="category">Business</span>
+
+                    <span class="status">Sample Listing</span>
+
+                </div>
+
+                <h3>Customer Service Intern</h3>
+
+                <h4>Customer Experience Company</h4>
+
+                <p>
+                    Support customer enquiries, manage customer
+                    feedback, assist with service delivery and
+                    maintain customer records.
+                </p>
+
+                <div class="details">
+
+                    <span>📍 Accra, Ghana</span>
+
+                    <span>⏳ 3 Months</span>
+
+                    <span>🏢 On-site</span>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>Communication</span>
+                    <span>Customer Care</span>
+                    <span>Problem Solving</span>
+
+                </div>
+
+                
+           
+
+
+                <a href="login.html" class="apply-btn">
+                    Apply Now →
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- NO RESULTS MESSAGE -->
+
+        <div id="noResults">
+
+            <h3>No internship opportunities found.</h3>
+
+            <p>Try changing your search or filter options.</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+
+    <section class="cta">
+
+        <h1>Are You an Organization?</h1>
+
+        <p>
+            Partner with UPSA Internship Connect and provide
+            students with valuable professional experiences.
+        </p>
+
+        <a href="signup.html">
+            Register Your Organization
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>UPSA Internship Connect</h3>
+<br>
+        <p>
+            Connecting UPSA Students to professional  Opportunities.
+        </p>
+<P>University of Professional Studies, Accra</P>
+        <p>
+            © 2026 UPSA Internship Connect. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="Internship.js"></script>
+
+</body>
+
+</html>

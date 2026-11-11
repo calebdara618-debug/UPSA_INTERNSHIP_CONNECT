@@ -1,0 +1,537 @@
+
+/* ==========================
+   CONTACT PAGE NAVBAR
+========================== */
+
+.navbar {
+    width: 100%;
+    min-height: 90px;
+    padding: 12px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* BRAND */
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-brand img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.brand-text h2 {
+    font-size: 22px;
+    color: #142b45;
+    margin: 0;
+}
+
+.brand-text p {
+    color: #d6a12d;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px 0 0;
+}
+
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #142b45;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d6a12d;
+}
+
+/* ACTIVE PAGE */
+
+.nav-links a.active {
+    color: #d6a12d;
+    border-bottom: 3px solid #d6a12d;
+    padding-bottom: 8px;
+}
+
+
+/* SIGN IN BUTTON */
+
+.nav-button a {
+    text-decoration: none;
+    background: #142b45;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-button a:hover {
+    background: #d6a12d;
+    color: white;
+}
+
+
+/* MOBILE MENU */
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #142b45;
+    cursor: pointer;
+}
+
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 950px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .brand-text h2 {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 12px 5%;
+    }
+
+    .nav-brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .brand-text h2 {
+        font-size: 16px;
+    }
+
+    .brand-text p {
+        font-size: 11px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 20px 0;
+        gap: 22px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+}
+
+
+/* CONTACT SECTION */
+
+
+
+.contact-section {
+    padding: 70px 8%;
+    background: #ffffff;
+}
+
+/* Heading */
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-heading h1 {
+    font-size: 42px;
+    color: #d6a12d;
+    margin-bottom: 15px;
+}
+
+.contact-heading p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* Main Container */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Contact Information */
+
+.contact-info {
+    background: #142b45;
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.contact-info h2 {
+    color: #e0ad39;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    line-height: 1.8;
+    color: #eeeeee;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-item span {
+    font-size: 25px;
+}
+
+.contact-item h3 {
+    color: #e0ad39;
+    margin-bottom: 7px;
+}
+
+.contact-item p {
+    color: #eeeeee;
+    line-height: 1.6;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    padding: 40px;
+    background: #f8f8f8;
+    border-radius: 12px;
+}
+
+.contact-form h2 {
+    color: #142b45;
+    font-size: 28px;
+    margin-bottom: 25px;
+    background-image: url("Assets/UPSA\ ICON.webp");
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #d6a12d;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+
+/* Send Button */
+
+.contact-btn {
+    width: 100%;
+    padding: 15px;
+    background: #d6a12d;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #142b45;
+}
+
+
+/* MAP SECTION */
+
+.map-section {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.map-section h2 {
+    font-size: 32px;
+    color: #142b45;
+    margin-bottom: 12px;
+}
+
+.map-section p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    display: block;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 45px 5%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-heading h1 {
+        font-size: 32px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 25px;
+    }
+
+    .map-section {
+        margin-top: 50px;
+    }
+
+    .map-section h2 {
+        font-size: 25px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+}
+/* =========================
+   FOOTER SECTION
+========================= */
+
+.main-footer {
+    background: #102b4e;
+    color: #ffffff;
+    padding: 60px 8% 0;
+    margin-top: 70px;
+}
+
+/* Footer Container */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.3fr 1fr;
+    gap: 40px;
+    max-width: 1300px;
+    margin: auto;
+    padding-bottom: 45px;
+}
+
+/* Footer Headings */
+
+.footer-column h3 {
+    color: #e0ad39;
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+.footer-about h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.footer-about h2 span {
+    color: #e0ad39;
+}
+
+.footer-about h4 {
+    color: #e0ad39;
+    margin-top: 20px;
+}
+
+/* Footer Paragraphs */
+
+.footer-column p {
+    color: #d5dce5;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* Quick Links */
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 13px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #d5dce5;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #e0ad39;
+    padding-left: 6px;
+}
+
+/* Social Media */
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.social-links a {
+    color: #d5dce5;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #e0ad39;
+    transform: translateX(5px);
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-bottom p {
+    color: #bfc9d5;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .main-footer {
+        padding: 45px 6% 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about h2 {
+        font-size: 21px;
+    }
+
+}
